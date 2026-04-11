@@ -1,0 +1,21 @@
+name: Identity
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repository identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f LICENSE
+          grep -F "REGRESSORIUM" README.md
+          grep -F "REGRESSORIUM is the terminal recourse plane of the Verifrax stack." README.md
