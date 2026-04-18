@@ -11,3 +11,5 @@ Minimum closure states:
 - closed
 
 Closure here does not redefine law, accepted epoch, recognition, execution, or verification.
+
+The current recourse object of record is `claims/current/recourse-object-0001.json`.

@@ -27,6 +27,7 @@ It does not replace adjacent sovereign boundaries.
 - defines counterparty, burden, remedy, escalation, and closure rules
 - publishes recourse-object structure
 - publishes current and historical recourse indexes
+- publishes the current recourse-object entry surface
 - preserves recourse as a distinct sovereign function
 
 ## What it does not do
@@ -42,9 +43,15 @@ It does not replace adjacent sovereign boundaries.
 
 ## Public surface
 
-The public surface of this repository is its repository identity, README boundary, recourse doctrine, recourse-object schema, and explicit current/historical recourse indexes.
+The public surface of this repository is its repository identity, README boundary, recourse doctrine, recourse-object schema, the current recourse-object entry surface, and explicit current/historical recourse indexes.
 
 Recourse here is not recognition.
 Recourse here is not verification.
 Recourse here is not execution.
 Recourse here is not law.
+
+## Recourse-object entry surface
+
+- current active recourse-object entry surface: `claims/current/recourse-object-0001.json`
+- current recourse index: `claims/current/index.json`
+- historical recourse-object archive: `claims/history/`

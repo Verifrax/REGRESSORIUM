@@ -1,6 +1,13 @@
 {
   "object_type": "RecourseIndex",
-  "status": "current",
-  "items": [],
-  "rule": "Current recourse objects must bind to a recognition object and must not redefine recognized truth."
+  "status": "ACTIVE_TRUTH",
+  "current_recourse_object_ref": "claims/current/recourse-object-0001.json",
+  "entries": [
+    {
+      "recourse_object_id": "recourse-object-0001",
+      "path": "claims/current/recourse-object-0001.json",
+      "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
+      "recourse_status": "OPEN_FOR_RECOURSE"
+    }
+  ]
 }

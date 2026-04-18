@@ -8,3 +8,5 @@ Escalation must:
 - state next recourse posture
 - preserve prior recourse history
 - avoid redefining recognition or truth-of-record
+
+The current recourse object of record is `claims/current/recourse-object-0001.json`.

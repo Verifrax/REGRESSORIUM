@@ -9,3 +9,5 @@ A remedy path must identify:
 - eligible remedy classes
 - blocked remedy classes
 - closure interaction
+
+The current recourse object of record is `claims/current/recourse-object-0001.json`.
