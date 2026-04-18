@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://verifrax.net/regressorium/schemas/recourse-object.schema.json",
+  "title": "REGRESSORIUM recourse object",
+  "type": "object",
+  "required": [
+    "recourse_id",
+    "recognition_ref",
+    "counterparty",
+    "burden",
+    "remedy",
+    "escalation",
+    "closure_state",
+    "status"
+  ],
+  "properties": {
+    "recourse_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recognition_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "counterparty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "burden": {
+      "type": "string",
+      "minLength": 1
+    },
+    "remedy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "escalation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "closure_state": {
+      "type": "string",
+      "enum": [
+        "open",
+        "burdened",
+        "remediating",
+        "escalated",
+        "closed"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "current",
+        "historical"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

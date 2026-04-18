@@ -1,0 +1,6 @@
+{
+  "object_type": "RecourseIndex",
+  "status": "current",
+  "items": [],
+  "rule": "Current recourse objects must bind to a recognition object and must not redefine recognized truth."
+}
