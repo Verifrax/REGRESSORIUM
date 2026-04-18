@@ -1,0 +1,37 @@
+{
+  "object_type": "RecourseObject",
+  "recourse_object_id": "recourse-object-0001",
+  "status": "ACTIVE_TRUTH",
+  "claim_class_ref": "https://github.com/Verifrax/SYNTAGMARIUM/blob/main/claim-classes/recourse-object.json",
+  "recourse_index_ref": "claims/current/index.json",
+  "historical_archive_ref": "claims/history/",
+  "governing_law_version_ref": "https://github.com/Verifrax/SYNTAGMARIUM/blob/main/law/versions/current/law-version-0001.json",
+  "accepted_epoch_ref": "https://github.com/Verifrax/ORBISTIUM/blob/main/epochs/current/accepted-epoch-0001.json",
+  "authority_object_ref": "https://github.com/Verifrax/AUCTORISEAL/blob/main/authorities/current/authority-object-0001.json",
+  "execution_receipt_ref": "https://github.com/Verifrax/CORPIFORM/blob/main/receipts/current/execution-receipt-0001.json",
+  "verification_result_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/verification/results/current/verification-result-0001.json",
+  "recognition_object_ref": "https://github.com/Verifrax/ANAGNORIUM/blob/main/recognitions/current/recognition-object-0001.json",
+  "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
+  "counterparty_rule_ref": "COUNTERPARTY.md",
+  "burden_assignment_ref": "BURDEN_ASSIGNMENT.md",
+  "remedy_matrix_ref": "REMEDY_MATRIX.md",
+  "escalation_flow_ref": "ESCALATION_FLOW.md",
+  "closure_states_ref": "CLOSURE_STATES.md",
+  "recourse_status": "OPEN_FOR_RECOURSE",
+  "burden_assignment": "challenger bears burden to identify a bounded defect in the recognized artifact-0005 chain under already-published law, epoch, authority, execution, verification, and recognition objects",
+  "remedy_path": "challenge may seek bounded correction, re-evaluation, or explicit refusal of downstream consequence without redefining upstream truth surfaces directly",
+  "escalation_path": "if burden is met and bounded defect remains unresolved, matter escalates through explicit recourse handling rather than silent reinterpretation",
+  "closure_state": "OPEN",
+  "limits": [
+    "recourse does not redefine law",
+    "recourse does not redefine accepted epoch",
+    "recourse does not replace authority issuance",
+    "recourse does not replace execution",
+    "recourse does not replace verification",
+    "recourse does not replace recognition"
+  ],
+  "notes": [
+    "Current machine-readable recourse object for the active recognized artifact-0005 boundary.",
+    "Historical recourse objects must not outrank this current recourse object."
+  ]
+}
