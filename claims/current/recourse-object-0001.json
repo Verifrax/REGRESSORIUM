@@ -32,6 +32,14 @@
   ],
   "notes": [
     "Current machine-readable recourse object for the active recognized artifact-0005 boundary.",
-    "Historical recourse objects must not outrank this current recourse object."
-  ]
+    "Historical recourse objects must not outrank this current recourse object.",
+    "Current machine-readable recourse entry surface for the active terminal recourse boundary.",
+    "Historical recourse entry surfaces must not outrank this current recourse object.",
+    "This object binds authority reading, verification reading, receipt reading, and recognition reading for terminal recourse.",
+    "It does not define continuity or transfer truth."
+  ],
+  "history_ref": "claims/history/",
+  "authority_ref": "https://github.com/Verifrax/AUCTORISEAL/blob/main/authorities/current/authority-object-0001.json",
+  "recognition_ref": "https://github.com/Verifrax/ANAGNORIUM/blob/main/recognitions/current/recognition-object-0001.json",
+  "continuity_transfer_boundary": "NON_ROLE_BOUNDARY"
 }
