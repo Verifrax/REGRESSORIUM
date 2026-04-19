@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://verifrax.net/regressorium/schemas/recourse-audit-record.schema.json",
+  "title": "REGRESSORIUM Recourse Audit Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "object_type",
+    "schema_version",
+    "audit_id",
+    "timestamp",
+    "input_class",
+    "requested_output_class",
+    "decision",
+    "rejection_reason",
+    "boundary_zone",
+    "sovereign_collision_flags",
+    "notes"
+  ],
+  "properties": {
+    "object_type": { "const": "RECOURSE_AUDIT_RECORD" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "audit_id": { "type": "string", "minLength": 1 },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "input_class": {
+      "enum": [
+        "recognition-object-reference",
+        "claim-class-reference",
+        "law-version-reference",
+        "accepted-epoch-reference",
+        "authority-object-reference",
+        "execution-receipt-reference",
+        "verification-result-reference",
+        "operator-request"
+      ]
+    },
+    "requested_output_class": {
+      "enum": [
+        "recourse-object",
+        "recourse-index-update",
+        "law-object",
+        "accepted-state-object",
+        "authority-object",
+        "execution-receipt",
+        "verification-verdict",
+        "recognition-object",
+        "proof-publication-object",
+        "intake-decision-object"
+      ]
+    },
+    "decision": {
+      "enum": [
+        "emitted",
+        "rejected",
+        "redirected"
+      ]
+    },
+    "rejection_reason": {
+      "enum": [
+        "not-applicable",
+        "input-class-unsupported",
+        "output-class-unsupported",
+        "would-author-law",
+        "would-mutate-accepted-state",
+        "would-issue-authority",
+        "would-execute-governed-action",
+        "would-emit-verification-verdict",
+        "would-recognize-terminal-truth",
+        "would-publish-proof-authority",
+        "would-operate-intake-authority"
+      ]
+    },
+    "boundary_zone": {
+      "enum": [
+        "regressorium-recourse",
+        "outside-regressorium-boundary"
+      ]
+    },
+    "sovereign_collision_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "law",
+        "state",
+        "authority",
+        "execution",
+        "verification",
+        "recognition",
+        "proof",
+        "intake"
+      ],
+      "properties": {
+        "law": { "type": "boolean" },
+        "state": { "type": "boolean" },
+        "authority": { "type": "boolean" },
+        "execution": { "type": "boolean" },
+        "verification": { "type": "boolean" },
+        "recognition": { "type": "boolean" },
+        "proof": { "type": "boolean" },
+        "intake": { "type": "boolean" }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

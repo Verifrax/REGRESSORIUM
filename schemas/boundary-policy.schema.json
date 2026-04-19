@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://verifrax.net/regressorium/schemas/boundary-policy.schema.json",
+  "title": "REGRESSORIUM Boundary Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "object_type",
+    "surface",
+    "schema_version",
+    "state_type",
+    "role",
+    "allowed_inputs",
+    "allowed_output_classes",
+    "forbidden_output_classes",
+    "required_boundary_assertions",
+    "rejection_reasons",
+    "adjacent_sovereign_surfaces",
+    "review_rule"
+  ],
+  "properties": {
+    "object_type": { "const": "BOUNDARY_POLICY" },
+    "surface": { "const": "REGRESSORIUM" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "state_type": { "const": "ACTIVE_TRUTH" },
+    "role": { "const": "terminal-recourse" },
+    "allowed_inputs": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "recognition-object-reference",
+          "claim-class-reference",
+          "law-version-reference",
+          "accepted-epoch-reference",
+          "authority-object-reference",
+          "execution-receipt-reference",
+          "verification-result-reference",
+          "operator-request"
+        ]
+      }
+    },
+    "allowed_output_classes": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "recourse-object",
+          "recourse-output-record",
+          "recourse-audit-record",
+          "recourse-index-update"
+        ]
+      }
+    },
+    "forbidden_output_classes": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "law-object",
+          "accepted-state-object",
+          "authority-object",
+          "execution-receipt",
+          "verification-verdict",
+          "recognition-object",
+          "proof-publication-object",
+          "intake-decision-object"
+        ]
+      }
+    },
+    "required_boundary_assertions": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "not-law",
+          "not-state",
+          "not-authority",
+          "not-execution",
+          "not-verification",
+          "not-recognition",
+          "not-proof",
+          "not-intake",
+          "recourse-downstream-of-recognition"
+        ]
+      }
+    },
+    "rejection_reasons": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "input-class-unsupported",
+          "output-class-unsupported",
+          "would-author-law",
+          "would-mutate-accepted-state",
+          "would-issue-authority",
+          "would-execute-governed-action",
+          "would-emit-verification-verdict",
+          "would-recognize-terminal-truth",
+          "would-publish-proof-authority",
+          "would-operate-intake-authority"
+        ]
+      }
+    },
+    "adjacent_sovereign_surfaces": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "law",
+        "state",
+        "reconciliation",
+        "cognition",
+        "authority",
+        "execution",
+        "verification",
+        "recognition"
+      ],
+      "properties": {
+        "law": { "const": "SYNTAGMARIUM" },
+        "state": { "const": "ORBISTIUM" },
+        "reconciliation": { "const": "CONSONORIUM" },
+        "cognition": { "const": "TACHYRIUM" },
+        "authority": { "const": "AUCTORISEAL" },
+        "execution": { "const": "CORPIFORM" },
+        "verification": { "const": "VERIFRAX" },
+        "recognition": { "const": "ANAGNORIUM" }
+      }
+    },
+    "review_rule": {
+      "const": "recourse-object-requires-explicit-recognition-basis-and-non-recognition-boundary"
+    }
+  }
+}

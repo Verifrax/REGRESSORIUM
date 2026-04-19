@@ -1,0 +1,67 @@
+{
+  "object_type": "BOUNDARY_POLICY",
+  "surface": "REGRESSORIUM",
+  "schema_version": "0.1.0",
+  "state_type": "ACTIVE_TRUTH",
+  "role": "terminal-recourse",
+  "allowed_inputs": [
+    "recognition-object-reference",
+    "claim-class-reference",
+    "law-version-reference",
+    "accepted-epoch-reference",
+    "authority-object-reference",
+    "execution-receipt-reference",
+    "verification-result-reference",
+    "operator-request"
+  ],
+  "allowed_output_classes": [
+    "recourse-object",
+    "recourse-output-record",
+    "recourse-audit-record",
+    "recourse-index-update"
+  ],
+  "forbidden_output_classes": [
+    "law-object",
+    "accepted-state-object",
+    "authority-object",
+    "execution-receipt",
+    "verification-verdict",
+    "recognition-object",
+    "proof-publication-object",
+    "intake-decision-object"
+  ],
+  "required_boundary_assertions": [
+    "not-law",
+    "not-state",
+    "not-authority",
+    "not-execution",
+    "not-verification",
+    "not-recognition",
+    "not-proof",
+    "not-intake",
+    "recourse-downstream-of-recognition"
+  ],
+  "rejection_reasons": [
+    "input-class-unsupported",
+    "output-class-unsupported",
+    "would-author-law",
+    "would-mutate-accepted-state",
+    "would-issue-authority",
+    "would-execute-governed-action",
+    "would-emit-verification-verdict",
+    "would-recognize-terminal-truth",
+    "would-publish-proof-authority",
+    "would-operate-intake-authority"
+  ],
+  "adjacent_sovereign_surfaces": {
+    "law": "SYNTAGMARIUM",
+    "state": "ORBISTIUM",
+    "reconciliation": "CONSONORIUM",
+    "cognition": "TACHYRIUM",
+    "authority": "AUCTORISEAL",
+    "execution": "CORPIFORM",
+    "verification": "VERIFRAX",
+    "recognition": "ANAGNORIUM"
+  },
+  "review_rule": "recourse-object-requires-explicit-recognition-basis-and-non-recognition-boundary"
+}

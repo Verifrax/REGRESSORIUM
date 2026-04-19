@@ -1,0 +1,25 @@
+{
+  "object_type": "RECOURSE_AUDIT_RECORD",
+  "schema_version": "0.1.0",
+  "audit_id": "regressorium-audit-example-0001",
+  "timestamp": "2026-04-19T16:55:36Z",
+  "input_class": "operator-request",
+  "requested_output_class": "verification-verdict",
+  "decision": "rejected",
+  "rejection_reason": "would-emit-verification-verdict",
+  "boundary_zone": "outside-regressorium-boundary",
+  "sovereign_collision_flags": {
+    "law": false,
+    "state": false,
+    "authority": false,
+    "execution": false,
+    "verification": true,
+    "recognition": false,
+    "proof": false,
+    "intake": false
+  },
+  "notes": [
+    "Verification remains upstream of terminal recourse.",
+    "REGRESSORIUM may not emit verification verdicts."
+  ]
+}
