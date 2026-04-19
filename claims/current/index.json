@@ -5,9 +5,7 @@
   "entries": [
     {
       "recourse_object_id": "recourse-object-0001",
-      "path": "claims/current/recourse-object-0001.json",
-      "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
-      "recourse_status": "OPEN_FOR_RECOURSE"
+      "path": "claims/current/recourse-object-0001.json"
     }
   ],
   "historical": false
