@@ -6,7 +6,7 @@ It determines burden, remedy, escalation, and closure of bounded claims without 
 
 ## Status
 
-Active public sovereign boundary with an explicit terminal recourse role inside the Verifrax stack.
+Active public sovereign boundary with an explicit terminal recourse role, machine-readable boundary policy, typed recourse schemas, and audit surfaces.
 
 ## Boundary
 
@@ -26,6 +26,8 @@ It does not replace adjacent sovereign boundaries.
 - defines terminal-recourse doctrine
 - defines counterparty, burden, remedy, escalation, and closure rules
 - publishes recourse-object structure
+- publishes machine-readable boundary policy through `contracts/boundary-policy.json`
+- publishes typed recourse output and audit schemas through `schemas/`
 - publishes current and historical recourse indexes
 - publishes the current recourse-object entry surface
 - preserves recourse as a distinct sovereign function
@@ -43,7 +45,7 @@ It does not replace adjacent sovereign boundaries.
 
 ## Public surface
 
-The public surface of this repository is its repository identity, README boundary, recourse doctrine, recourse-object schema, the current recourse-object entry surface, and explicit current/historical recourse indexes.
+The public surface of this repository is its repository identity, README boundary, recourse doctrine, `contracts/boundary-policy.json`, typed schemas, the current recourse-object entry surface, and explicit current/historical recourse indexes.
 
 Recourse here is not recognition.
 Recourse here is not verification.

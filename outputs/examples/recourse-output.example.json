@@ -1,0 +1,25 @@
+{
+  "object_type": "RECOURSE_OUTPUT",
+  "schema_version": "0.1.0",
+  "output_id": "regressorium-output-example-0001",
+  "generated_at": "2026-04-19T16:55:36Z",
+  "input_class": "recognition-object-reference",
+  "output_class": "recourse-index-update",
+  "status": "DERIVED_PROJECTION",
+  "summary": "Recourse index update derived from the active recourse object.",
+  "recourse_scope": "current recourse publication only",
+  "boundary_assertions": {
+    "not-law": true,
+    "not-state": true,
+    "not-authority": true,
+    "not-execution": true,
+    "not-verification": true,
+    "not-recognition": true,
+    "not-proof": true,
+    "not-intake": true,
+    "recourse-downstream-of-recognition": true
+  },
+  "basis_refs": [
+    "claims/current/index.json"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "object_type": "RECOURSE_OUTPUT",
+  "schema_version": "0.1.0",
+  "output_id": "regressorium-output-0001",
+  "generated_at": "2026-04-19T16:55:36Z",
+  "input_class": "recognition-object-reference",
+  "output_class": "recourse-object",
+  "status": "ACTIVE_TRUTH",
+  "summary": "Terminal recourse emitted with explicit downstream-of-recognition boundary.",
+  "recourse_scope": "terminal recourse only",
+  "boundary_assertions": {
+    "not-law": true,
+    "not-state": true,
+    "not-authority": true,
+    "not-execution": true,
+    "not-verification": true,
+    "not-recognition": true,
+    "not-proof": true,
+    "not-intake": true,
+    "recourse-downstream-of-recognition": true
+  },
+  "basis_refs": [
+    "claims/current/recourse-object-0001.json",
+    "claims/current/index.json"
+  ]
+}

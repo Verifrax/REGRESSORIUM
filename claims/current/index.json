@@ -9,5 +9,6 @@
       "subject_ref": "https://github.com/Verifrax/VERIFRAX/blob/main/evidence/artifact-0005/artifact-0005.json",
       "recourse_status": "OPEN_FOR_RECOURSE"
     }
-  ]
+  ],
+  "historical": false
 }

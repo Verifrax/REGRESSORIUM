@@ -10,3 +10,10 @@ Required fields for any obligation model:
 - remedy path
 - escalation path
 - closure rule
+
+## Machine-readable boundary surfaces
+
+- `contracts/boundary-policy.json`
+- `schemas/boundary-policy.schema.json`
+- `schemas/recourse-output.schema.json`
+- `schemas/recourse-audit-record.schema.json`
