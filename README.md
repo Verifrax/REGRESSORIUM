@@ -57,3 +57,7 @@ Recourse here is not law.
 - current active recourse-object entry surface: `claims/current/recourse-object-0001.json`
 - current recourse index: `claims/current/index.json`
 - historical recourse-object archive: `claims/history/`
+
+## License
+
+This repository is licensed under the Apache License 2.0. See `LICENSE`.
