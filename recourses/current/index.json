@@ -1,0 +1,14 @@
+{
+  "object_type": "recourse-object-index",
+  "schema_version": "1.0.0",
+  "status": "ACTIVE_TRUTH",
+  "current": "recourse-object-0001.json",
+  "entries": [
+    {
+      "object_id": "recourse-object-0001",
+      "path": "recourses/current/recourse-object-0001.json",
+      "status": "ACTIVE_TRUTH",
+      "recognition_ref": "ANAGNORIUM/recognitions/current/recognition-object-0001.json"
+    }
+  ]
+}

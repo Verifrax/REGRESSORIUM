@@ -1,0 +1,26 @@
+{
+  "object_type": "recourse-object",
+  "object_id": "recourse-object-0001",
+  "schema_version": "1.0.0",
+  "status": "ACTIVE_TRUTH",
+  "truth_type": "ACTIVE_TRUTH",
+  "claim_class_id": "recourse-object",
+  "governing_law_ref": "SYNTAGMARIUM/claim-classes/recourse-object.json",
+  "accepted_epoch_ref": "ORBISTIUM/epochs/current/accepted-epoch-0001.json",
+  "recognition_ref": "ANAGNORIUM/recognitions/current/recognition-object-0001.json",
+  "recourse_chamber": "REGRESSORIUM",
+  "posture": {
+    "state": "BOUNDARY_PRESENT_NO_BURDEN_ASSIGNED",
+    "meaning": "The public recourse object family is present without assigning external burden, remedy, escalation, or closure beyond this bounded object-family initialization.",
+    "remedy": "NONE_ASSIGNED",
+    "escalation": "NONE_ASSIGNED",
+    "closure": "NOT_APPLICABLE_TO_EXTERNAL_PARTY"
+  },
+  "boundary": {
+    "requires_terminal_recognition": true,
+    "does_not_create_truth": true,
+    "does_not_verify_first_instance": true,
+    "does_not_assign_external_burden": true
+  },
+  "created_at": "2026-04-25T00:00:00Z"
+}
