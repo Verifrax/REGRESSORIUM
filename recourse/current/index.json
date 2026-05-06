@@ -1,0 +1,7 @@
+{
+  "object_type": "RecourseObjectIndex",
+  "status": "ACTIVE_INDEX",
+  "current_recourse_object_id": "recourse-object-0001",
+  "current_recourse_object_ref": "recourse/current/recourse-object-0001.json",
+  "truth_warning": "INDEX_POINTER_NOT_RECOGNITION_OBJECT"
+}
